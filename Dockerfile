@@ -6,7 +6,6 @@ RUN apk add --no-cache --virtual .build-deps && \
         rm -rf /var/cache/apk/*
 
 RUN pip install coscmd
-RUN pip install wrongtest
 
 COPY ["./download.sh", "/target/download.sh"]
 
